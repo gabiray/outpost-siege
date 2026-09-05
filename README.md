@@ -31,6 +31,13 @@ further upgrades and coordinate attacks on enemy bases.
   </a>
 </p>
 
+## Download
+
+[Download the Windows prototype](../../releases)
+
+Download `OutpostSiege-v0.1b-Windows-NoSound.zip` from the release assets,
+extract the entire archive, and launch the game executable.
+
 ## Gameplay
 
 The commander directs the outpost's development and military operations.
