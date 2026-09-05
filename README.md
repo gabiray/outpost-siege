@@ -7,40 +7,68 @@
 ![Aseprite](https://img.shields.io/badge/Aseprite-7D929E?style=flat-square&logo=aseprite&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square)
 
-Outpost Siege is a 2D strategy and base defense game developed in Unity,
+Outpost Siege is a 2D strategy and base defense prototype developed in Unity,
 set in a World War II-inspired environment.
 
-Take command of an isolated outpost behind enemy lines. Explore the surrounding
-territory, gather resources, recruit troops, and build defenses while holding
-off recurring enemy attacks. Recover a strategic research building to unlock
-stronger fortifications and prepare an offensive against enemy bases.
+Command an isolated outpost behind enemy lines. Explore the surrounding
+territory, manage a limited supply of coins, recruit units, and build defenses
+against increasingly large enemy waves. Recover a research building to unlock
+further upgrades and coordinate attacks on enemy bases.
+
+## Gameplay Demonstration
 
 <p align="center">
-  <a href="screenshots/sending-troops.png">
-    <img src="screenshots/sending-troops.png"
-         alt="The commander advancing with allied infantry"
+  <a href="https://youtu.be/ESxV5ebcrsg">
+    <img src="screenshots/main-menu.png"
+         alt="The commander advancing alongside allied infantry"
          width="820">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://youtu.be/ESxV5ebcrsg">
+    <strong>Watch the prototype gameplay</strong>
   </a>
 </p>
 
 ## Gameplay
 
-Coins support recruitment, construction, and upgrades. Expanding the outpost
-requires balancing exploration and spending with preparations for the next
-attack.
+The commander directs the outpost's development and military operations.
+Although unable to shoot, the commander can take damage and die, making
+positioning and protection important during exploration and combat.
+
+Coins fund recruitment, construction, resource gathering, and upgrades.
+Carrying capacity is limited, so spending and collecting resources must be
+planned carefully.
+
+The current prototype includes:
 
 - Procedural terrain variation and randomized research building placement
-- Resource collection and management
+- Coin collection with limited carrying capacity
 - Infantry and engineer recruitment
+- Tree harvesting performed by engineers
 - Defensive walls, watchtowers, and construction upgrades
-- Enemy waves that grow in size over time
-- Research-based progression
-- Victory through the destruction of both enemy bases
+- Research-based access to additional upgrades and attack commands
+- Enemy waves that increase in size over time
+- Destructible enemy bases on both sides of the map
 
-## Building the Outpost
+## Units and Roles
 
-Recruit engineers to construct and improve defenses. Establish walls and
-watchtowers, position your forces, and strengthen the outpost before advancing.
+| Unit | Role |
+| --- | --- |
+| Commander | Explores, spends coins, and coordinates construction and attacks. Cannot shoot and must avoid taking fatal damage. |
+| Engineer | Builds structures and cuts marked trees, which can drop coins. |
+| Infantry | Moves to the nearest wall, takes a defensive position, and fires at detected enemies. Advances toward an enemy base when ordered to attack. |
+| Tower Sniper | Provides defensive fire from a watchtower. |
+
+## Construction and Resources
+
+Spend coins to commission construction, recruit units, and mark trees for
+harvesting. Engineers carry out the work, and harvested trees can return coins
+to support further expansion.
+
+Walls provide defensive positions for infantry, while watchtowers support the
+defensive line with sniper fire.
 
 <p align="center">
   <a href="screenshots/construction.png">
@@ -50,7 +78,7 @@ watchtowers, position your forces, and strengthen the outpost before advancing.
   </a>
   <a href="screenshots/fortifications.png">
     <img src="screenshots/fortifications.png"
-         alt="A watchtower and upgraded fortifications"
+         alt="A sniper watchtower and upgraded fortifications"
          width="49%">
   </a>
 </p>
@@ -58,29 +86,32 @@ watchtowers, position your forces, and strengthen the outpost before advancing.
 ## Exploration and Research
 
 The research building can appear on either side of the starting position.
-Finding and recovering it unlocks additional fortification upgrades, giving
-exploration a direct role in the outpost's development.
+Finding and unlocking it grants access to additional construction upgrades
+and the command menu used to launch attacks.
 
-The current prototype uses a university building as the research objective.
+The current prototype represents this objective with a university building.
 
 <p align="center">
   <a href="screenshots/exploration.png">
     <img src="screenshots/exploration.png"
-         alt="Exploring the area around the research building"
+         alt="The commander exploring near the research building"
          width="49%">
   </a>
   <a href="screenshots/research-unlock.png">
     <img src="screenshots/research-unlock.png"
-         alt="Recovering the research objective"
+         alt="Unlocking the research objective"
          width="49%">
   </a>
 </p>
 
-## Combat and Defense
+## Defense and Offensives
 
-Defend against recurring attacks while assembling a force capable of pushing
-into enemy territory. Destroy the enemy bases on both sides of the map to
-complete the scenario.
+Enemy waves arrive at timed intervals and grow in size as the game progresses.
+Infantry defends from nearby walls and engages enemies within detection range.
+
+After unlocking the research building, use the command menu to send troops
+toward the left or right enemy base. Each base has its own health and can be
+destroyed through sustained attacks. Destroy both bases to win.
 
 <p align="center">
   <a href="screenshots/base-defense.png">
@@ -90,16 +121,25 @@ complete the scenario.
   </a>
   <a href="screenshots/attack-enemy.png">
     <img src="screenshots/attack-enemy.png"
-         alt="Allied infantry engaging enemy troops"
+         alt="Allied infantry engaging enemy forces"
          width="49%">
   </a>
 </p>
 
+## Controls
+
+| Key | Action |
+| --- | --- |
+| W / A / S / D | Move the commander |
+| Space | Interact with nearby objects and spend coins |
+| M | Open the attack command menu after unlocking the research building |
+| Esc | Pause the game |
+
 ## Development
 
-Inspired by the resource management and defensive progression of
-Kingdom: Two Crowns, Outpost Siege adapts these ideas to a military setting
-with infantry recruitment, fortifications, and research objectives.
+Inspired by the resource management and base defense mechanics of
+Kingdom: Two Crowns, Outpost Siege explores a military setting built around
+unit coordination, fortifications, and research progression.
 
 | Area | Tools |
 | --- | --- |
@@ -117,5 +157,5 @@ gameplay.
 Some environmental sprites are temporary third-party placeholders awaiting
 replacement with original artwork.
 
-This repository is a showcase of the game. Source code and game assets are
-not publicly distributed.
+This repository showcases the game through screenshots and gameplay footage.
+The Unity source project and original asset files are not publicly distributed.
